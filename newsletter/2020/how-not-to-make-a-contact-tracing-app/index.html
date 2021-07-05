@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-min_v%3D4689612d81.css">
+
+    <title>How not to make a contact tracing app - EconByte</title>
+
+    <link rel="icon" href="../../../favicon.png" type="image/png">
+    <link rel="canonical" href="https://econbyte.com/newsletter/2020/how-not-to-make-a-contact-tracing-app/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="EconByte">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How not to make a contact tracing app">
+    <meta property="og:description" content="Attention governments that built coronavirus tracing apps using a centralised model: apologise to taxpayers, toss the code and start over with a decentralised framework (Apple and Google literally provided one for free) or go back to relying solely on manual contact tracing. The latest centralised tracing app catastrophe comes from">
+    <meta property="og:url" content="https://econbyte.com/newsletter/2020/how-not-to-make-a-contact-tracing-app/">
+    <meta property="og:image" content="../../../content/images/2020/06/Ioannidis-figure2-1.png">
+    <meta property="article:published_time" content="2020-06-22T21:31:43.000Z">
+    <meta property="article:modified_time" content="2020-06-22T21:32:25.000Z">
+    <meta property="article:tag" content="83">
+    <meta property="article:tag" content="Newsletter">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How not to make a contact tracing app">
+    <meta name="twitter:description" content="Attention governments that built coronavirus tracing apps using a centralised model: apologise to taxpayers, toss the code and start over with a decentralised framework (Apple and Google literally provided one for free) or go back to relying solely on manual contact tracing. The latest centralised tracing app catastrophe comes from">
+    <meta name="twitter:url" content="https://econbyte.com/newsletter/2020/how-not-to-make-a-contact-tracing-app/">
+    <meta name="twitter:image" content="https://econbyte.com/content/images/2020/06/Ioannidis-figure2-1.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Justin Pyvis">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="83, Newsletter">
+    <meta name="twitter:site" content="@econbyte">
+    <meta name="twitter:creator" content="@JustinPyvis">
+    <meta property="og:image:width" content="720">
+    <meta property="og:image:height" content="405">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "EconByte",
+        "url": "https://econbyte.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://econbyte.com/content/images/2020/09/Artboard-1-1.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Justin Pyvis",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://econbyte.com/content/images/2020/02/jjp-face-small-1.png",
+            "width": 100,
+            "height": 100
+        },
+        "url": "https://econbyte.com/author/justinpyvis/",
+        "sameAs": [
+            "https://econbyte.com",
+            "https://twitter.com/JustinPyvis"
+        ]
+    },
+    "headline": "How not to make a contact tracing app",
+    "url": "https://econbyte.com/newsletter/2020/how-not-to-make-a-contact-tracing-app/",
+    "datePublished": "2020-06-22T21:31:43.000Z",
+    "dateModified": "2020-06-22T21:32:25.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://econbyte.com/content/images/2020/06/Ioannidis-figure2-1.png",
+        "width": 720,
+        "height": 405
+    },
+    "keywords": "83, Newsletter",
+    "description": "Attention governments that built coronavirus tracing apps using a centralised\nmodel: apologise to taxpayers, toss the code and start over with a decentralised\nframework (Apple and Google literally provided one for free) or go back to\nrelying solely on manual contact tracing. The latest centralised tracing app\ncatastrophe comes from Norway\n[https://techcrunch.com/2020/06/15/norway-pulls-its-coronavirus-contacts-tracing-app-after-privacy-watchdogs-warning/]\n:\n\n&gt; One of the first national coronavir",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://econbyte.com/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.8">
+    <link rel="alternate" type="application/rss+xml" title="EconByte" href>
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.6.0/umd/portal.min.js" data-ghost="https://econbyte.com/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><style>:root {--ghost-accent-color: #000000;}</style>
+
+</head>
+<body><div id="top-section" class="top-section"><div id="primary-menu" class="navbar navbar-fixed-top background-light"><div class="container"><div class="navbar-header">
+
+  <div class="hamburger">
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="../../../">Home</a></li>
+      <li><a href="../../../about/">About</a></li>
+      <li><a href="../../../archive/">Archive</a></li>
+            <li><a href="../../../search/">Search</a></li>
+      <li><a href="#/portal/signup" title="Subscribe">Subscribe</a></li>
+    </ul>
+  </div>
+
+  <a href="../../../" class="navbar-brand">
+  <img class="main-logo large-logo" src="../../../content/images/2020/09/Artboard-1-1.png" alt="EconByte">
+  <img class="main-logo small-logo" src="../../../content/images/2020/09/Artboard-1.png" alt="EconByte"></a>
+  
+  <div class="mobile-try-free-container"><a href="#/portal/signup" class="btn btn-primary" title="Subscribe">Subscribe</a></div>
+  </div><div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav navbar-nav-desktop hidden-hamburger">
+      <li class="menu-item">
+        <a title="Home" href="../../../">Home</a></li>
+        <li class="menu-item"><a title="About" href="../../../about/">About</a></li>
+        <li class="menu-item"><a title="Archive" href="../../../archive/">Archive</a></li>
+                <li class="menu-item"><a title="Archive" href="../../../search/">Search</a></li>
+      </ul>
+      <div class="buttons-container navbar-right hidden-hamburger">
+    <a href="#/portal/signup" title="Subscribe" class="btn btn-primary navbar-btn">Subscribe</a></div></div></div></div></div>
+
+    <div class="main-content">
+    <div class="landing-container">
+  <div class="top-buffer"></div>
+  <div class="row">
+
+
+    
+
+  <div class="col-8">
+  <div class="content">
+    <article>
+
+    <div class="issue">
+      <p style="margin-bottom: 0;color: #e4572e;"><strong>Issue 83</strong></p>
+  <h1 style="margin: 0">How not to make a contact tracing app</h1>
+<p style="color:#888888;font-size:0.8em">Delivered on 23 June 2020 by Justin Pyvis. About a 6 min read.</p>
+
+
+<p>Attention governments that built coronavirus tracing apps using a centralised model: apologise to taxpayers, toss the code and start over with a decentralised framework (Apple and Google literally provided one for free) or go back to relying solely on manual contact tracing. The latest centralised tracing app catastrophe comes <a href="https://techcrunch.com/2020/06/15/norway-pulls-its-coronavirus-contacts-tracing-app-after-privacy-watchdogs-warning/">from Norway</a>:</p><blockquote>One of the first national coronavirus contacts-tracing apps to be launched in Europe is being suspended in Norway after the country’s data protection authority raised concerns that the software, called “Smittestopp,” poses a disproportionate threat to user privacy — including by continuously uploading people’s location.</blockquote><p>Norway's tracing app had a download rate of approximately 10% of the population, well below the levels to be of much use in contact tracing (for some reason people didn't want to install an app that centrally tracks them via GPS). But at least it worked, unlike Australia's <a href="https://www.abc.net.au/news/science/2020-06-17/covidsafe-contact-tracing-app-test-documents-rated-poor-iphone/12359250">COVIDSafe</a> app, which doesn't function properly on iPhones and is still <a href="https://www.theguardian.com/australia-news/2020/jun/17/covid-safe-app-australia-covidsafe-contact-tracing-australian-government-covid19-tracking-problems-working">riddled with bugs</a>:</p><blockquote>Documents released by the Digital Transformation Agency (DTA) reveal the app's ability to communicate between two locked iPhones was rated as "poor" as of April 26, which means at launch, its own tests suggested it logged encounters at a rate of 25 per cent or below. <br>... <br>One recently patched flaw allowed long-term tracing of phones even if the app was uninstalled. Although a patch fixed the issue, Android users may not be getting the most up-to-date app after developers noticed it would not auto-update if it was already running – a requirement for effective operation. <br><br>The Australian National University professor Dr Alwen Tiu told Guardian Australia that he had discovered “a different bug, unrelated to [the previous vulnerability] that has the same effect of extracting a permanent, trackable identity from an Android device”. <br><br>He said that this issue has not yet been addressed despite him reporting it to the DTA on the 2 June along with suggested a fix.</blockquote><p>When you 'open source' your app but don't allow developers to publicly raise issues or submit pull requests directly in the repository, you destroy an important feedback loop and replace it with bureaucratic incompetence, i.e. layers of middle management that don't understand it but are required to sign off on even a single line of code:</p><blockquote>Jim Mussared, one of the developers who has been reporting flaws to the Digital Transformation Agency, expressed his dismay at how the DTA had been “not at all communicative” with developers about the issues. <br><br>“It takes them a long time to confirm the issues, many remain unfixed. Many of these issues have been one-line fixes. Additionally there’s been a complete lack of transparency around all aspects of the development of the app,” he said.</blockquote><p>Contact tracing apps need to be open source (ticks the trust box) and decentralised (ticks the privacy/security box) for enough people to want to use them. Centralised contact tracing apps Do. Not. Work because the technology can't function in Apple's walled garden, they are not interoperable with cross-border apps, and they create a giant honey pot that malicious states, individuals or even one's own government will spend an eternity trying to access.</p><p>At least the United Kingdom acknowledged that fact and <a href="https://www.bbc.com/news/technology-53095336">abandoned</a> its centralised contact tracing app before it was launched:</p><blockquote>In a major U-turn, the UK is ditching the way its current coronavirus-tracing app works and shifting to a model based on technology provided by Apple and Google. <br><br>One advantage of the switch - if deployed - is that the NHS Covid-19 app would be able to overcome a limitation of iPhones and carry out Bluetooth "handshakes" when the software is running in the background. <br><br>Another is that it should be easier to make the app compatible with other countries' counterparts, which are based on the same system - including the Republic of Ireland and Germany.</blockquote><p>Curiously, the UK and Norway were both advised to adopt a centralised framework by Oxford University's <a href="https://www.bbc.com/news/technology-53051783">Big Data Institute</a>. The consultancy pushed for a centralised model because, like most epidemiological modellers, it failed to consider that humans were involved in the process and many wouldn't want to install an app that potentially violates their privacy, even if it's the first-best from an epidemiological data mining point of view.</p><p>But when decisions are made for politics rather than profit, what works is a secondary consideration. You see, UK politicians <a href="https://www.technologyreview.com/2020/06/19/1004190/uk-covid-contact-tracing-app-fiasco/">wanted glory</a>:</p><blockquote>They believed it [a centralised app] could gather the information it had collected on contacts into a protected data store, with the potential to be de-anonymized so people could be alerted if they had come in contact with someone who presented coronavirus symptoms or had received a positive test result. <br><br>The centralized approach would allow much more data analysis than decentralized models, which give users exposure notifications but don’t allow officials nearly so much access to data. <br>... <br>Ministers were focused on rolling out a “world-beating” app, rather than just a successful one, so that they could claim victory on the world stage. The momentum toward a centralized system became unstoppable—and the challenges of building one were largely brushed aside.</blockquote><p>It's not the first Big Data modelling stuff-up during this pandemic, either. The International Institute of Forecasters (IIF) has compiled a <a href="https://forecasters.org/blog/2020/06/14/forecasting-for-covid-19-has-failed/">long summary</a> of where it all went wrong, including poor data input, incorrect modelling assumptions, high sensitivity of estimates, failure to incorporate epidemiological features (e.g. humans), assuming benefits of available interventions without evidence, a lack of transparency, lack of modelling expertise, group-think and bandwagon effects, selective reporting and looking at only one or a few dimensions of the problem at hand.</p><p>Here's a chart provided by the IIF showing predictions for the number of US deaths during week 27 (for ~3 weeks downstream). The eight models displayed ranged from 2419 to 11190 deaths - a 4.5-fold difference - and the spectrum of 95% confidence intervals ranged from fewer than 100 deaths to over 16,000 deaths, almost a 200-fold difference. </p><figure class="kg-card kg-image-card"><img src="../../../content/images/2020/06/Ioannidis-figure2.png" class="kg-image" alt loading="lazy" width="720" height="405" srcset="../../../content/images/size/w600/2020/06/Ioannidis-figure2.png 600w, ../../../content/images/2020/06/Ioannidis-figure2.png 720w" sizes="(min-width: 720px) 720px"></figure><p>The lesson is clear: models are useful as a <a href="../forecasting-lessons/">sensibility check</a> but should under no circumstance be relied upon to inform policy decisions, especially those as drastic as shutting down entire economies. They are wrong far more than they're right.</p><p>Enjoy the rest of this week's issue. Cheers, </p><p>— Justin</p><h2 id="other-bits-of-interest">Other bits of interest</h2><h3 id="trump-s-section-230-legislation-is-a-lame-duck">Trump's Section 230 legislation is a lame duck</h3><blockquote>The changes to Section 230 of the Communications Decency Act proposed by Hawley do not appear to place any new restrictions on how companies define their own moderation policies — only that they stick to, and evenly apply, whatever rules they ultimately decide upon... [However], to counteract this, all any company would need to do is state clearly in its terms of service that it does, in fact, reserve the right to selectively enforce its own rules. Most companies already do this, in one way or another.</blockquote><ul><li><a href="https://www.gizmodo.com.au/2020/06/senator-hawleys-new-section-230-bill-isnt-going-to-make-silicon-valley-sweat/">New Legislation Isn’t Going to Make Silicon Valley Sweat</a></li><li><a href="https://www.eff.org/deeplinks/2020/06/two-different-proposals-amend-section-230-share-similar-goal-damage-online-users">Two Different Proposals to Amend Section 230 Share A Similar Goal: Damage Online Users’ Speech</a></li></ul><h3 id="a-subscription-based-search-engine">A subscription based search engine?</h3><p>People say they hate advertising but will they pay to get rid of them? For some things, sure, but a search engine, where the adverts are often what you're after anyway? I'm not so sure.</p><blockquote>Neeva is a search engine that looks for information on the web as well as personal files like emails and other documents. It will not show any advertisements and it will not collect or profit from user data, he said. It plans to make money on subscriptions from users paying for the service.</blockquote><ul><li><a href="https://www.nytimes.com/2020/06/19/technology/google-neeva-executive.html">A Former Google Executive Takes Aim at His Old Company With a Start-Up</a></li></ul><h3 id="the-coronavirus-was-good-for-some">The coronavirus was good for some</h3><figure class="kg-card kg-image-card"><img src="../../../content/images/2020/06/profiting-pademic-ft-june2020-1.png" class="kg-image" alt loading="lazy" width="680" height="528" srcset="../../../content/images/size/w600/2020/06/profiting-pademic-ft-june2020-1.png 600w, ../../../content/images/2020/06/profiting-pademic-ft-june2020-1.png 680w"></figure><p>In absolute terms Amazon was the biggest winner of the pandemic work-from-home shift, adding nearly half a trillion dollars in market cap.</p><ul><li><a href="https://www.ft.com/content/844ed28c-8074-4856-bde0-20f3bf4cd8f0">Prospering in the pandemic: the top 100 companies</a></li></ul><h3 id="the-european-union-does-something-right-">The European Union does something right 👏</h3><p>The EU has finally agreed on a set of technical specifications that will allow information to be exchanged between national contract tracing apps, so long as they use a decentralised approach (it's technically very, very difficult to do so using a centralised framework. Sorry France).</p><ul><li><a href="https://www.engadget.com/eu-commission-contact-tracing-interoperability-specifications-182445321.html">EU sets framework for contact tracing apps that work across borders</a></li></ul>
+
+<div class="row">
+<div class="col-3"><span class="button-underline"><a class="btn btn-tertiary" href="../censoring-social-media/">Previous issue</a></span></div><div class="col-3"></div>
+
+<div class="col-3"></div><div class="col-3"><span class="button-underline"><a class="btn btn-tertiary" href="../yale-on-facebooks-dominance/">Next issue</a></span></div>
+</div>
+
+<hr>
+<p><em>Issue 83: How not to make a contact tracing app was compiled by <a href="../../../author/justinpyvis/">Justin Pyvis</a> and delivered on 23 June 2020.</em></p>
+
+ 
+
+</div></article></div></div>
+
+
+
+<div class="col-4 sidebar">
+<div class="spacer"></div>
+  <h2>Recent issues</h2>
+
+      
+
+<p><time datetime="2021-07-05">05 Jul</time>: <a href="../../2021/facebook-is-not-a-monopolist/">Facebook is not a monopolist</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-06-28">28 Jun</time>: <a href="../../2021/tether-as-a-disruptor/">Tether as a disruptor</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-06-21">21 Jun</time>: <a href="../../2021/fbi-plot-hatched-over-beers/">FBI plot hatched over beers</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-06-14">14 Jun</time>: <a href="../../2021/regulating-crypto/">Regulating crypto</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-06-08">08 Jun</time>: <a href="../../2021/a-big-success/">A big success</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-05-31">31 May</time>: <a href="../../2021/facebooks-data-problem/">Facebook&#x27;s data problem</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-05-24">24 May</time>: <a href="../../2021/bubble-risks/">Bubble risks</a></p>
+ 
+
+
+      
+
+<p><time datetime="2021-05-10">10 May</time>: <a href="../../2021/chipageddon/">Chipageddon</a></p>
+ 
+
+<p><strong><a href="../../../archive/">View more &raquo;</a></strong></p>
+
+<hr class="spacer-small">
+<p class="text-muted">
+Enjoying EconByte? Check out <a href="https://brekkywrap.com" alt="Visit Brekky Wrap">Brekky Wrap</a> for the latest market, economic, political and tech news delivered daily, for free.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+  <footer>
+  <div class="footer">
+    <hr class="footer-spacer">
+    <div class="landing-container">
+  <div class="row">
+    <div class="col-8">
+  <p>All content, including the look and feel of the website and newsletter, is copyright &copy; 2018 – 2021 EconByte, all rights reserved. <a href="../../../rss">RSS feed</a>. Read our short <a href="../../../disclaimer/">disclaimer</a>.</p>
+
+  </div></div></div></div>
+  </footer>
+
+
+
+
+
+
+</body>
+</html>
